@@ -17,7 +17,8 @@
 }
 
 #topmenu .icon, #topmenu2 .active .icon, #topmenu2 a:hover .icon {
-  background-color: <?php echo $GLOBALS['cfg']['WhiteColor'] ?>
+  -webkit-filter: invert(100%);
+  filter: invert(100%)
 }
 
 .tabs {

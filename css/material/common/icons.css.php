@@ -6,8 +6,9 @@
   padding: .25em 10px 0 0;
 }
 
-#page_nav_icons img {
-  background-color: <?php echo $GLOBALS['cfg']['WhiteColor'] ?>
+#page_nav_icons .icon {
+	-webkit-filter: invert(100%);
+  filter: invert(100%)
 }
 
 #goto_pagetop, #lock_page_icon, #page_settings_icon {

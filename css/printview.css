@@ -15,12 +15,8 @@
 
 /* Standard CSS */
 
-body,
-table,
-th,
-td {
+body, table, th, td {
     color: #000;
-    background-color: #fff;
     font-size: 12px
 }
 
@@ -42,11 +38,8 @@ img {
 
 /* Table specific */
 
-table,
-th,
-td {
-    border: .1em solid #000;
-    background-color: #fff
+table, th, td {
+    border: .1em solid #ccc;
 }
 
 table {
@@ -54,46 +47,20 @@ table {
     border-spacing: 0.2em
 }
 
-thead {
-    border-collapse: collapse;
-    border-spacing: 0.2em;
-    border: .1em solid #000;
-    font-weight: 900
-}
-
-th,
-td {
+th, td {
     padding: 0.2em
 }
 
-thead th {
-    font-weight: bold;
-    background-color: #e5e5e5;
-    border: .1em solid #000
-}
-
-th.vtop,
-td.vtop {
+th.vtop, td.vtop {
     vertical-align: top
 }
 
-th.vbottom,
-td.vbottom {
+th.vbottom, td.vbottom {
     vertical-align: bottom
 }
 
-th.column_heading,
-th.column_action {
-    border: .1em solid #000
-}
-
-table tr {
-    border-left: .1em solid #000
-}
-
-table tr th,
-table.data th {
-    border-bottom: .1em solid #000
+tr:after {
+    display: none;
 }
 
 
@@ -102,8 +69,7 @@ table.data th {
 
 /* Hide Navigation and Top Menu bar */
 
-#pma_navigation,
-#floating_menubar {
+#pma_navigation, #floating_menubar {
     display: none
 }
 
@@ -138,9 +104,7 @@ table.data th {
 
 /* Hide footer, Demo notice, errors div */
 
-#pma_footer,
-#pma_demo,
-#pma_errors {
+#pma_footer, #pma_demo, #pma_errors {
     display: none
 }
 
@@ -179,8 +143,7 @@ table.data th {
 
 /* For hiding 'Open a New phpMyAdmin Window' button */
 
-.ic_window-new,
-.ic_s_cog {
+.ic_window-new, .ic_s_cog {
     display: none
 }
 
@@ -188,8 +151,7 @@ table.data th {
     display: none
 }
 
-#structure-action-links,
-#addColumns {
+#structure-action-links, #addColumns {
     display: none
 }
 
@@ -200,25 +162,8 @@ table.data th {
     display: none
 }
 
-.cDrop,
-.cEdit,
-.cList,
-.cCpy,
-.cPointer {
+.cDrop, .cEdit, .cList, .cCpy, .cPointer {
     display: none
-}
-
-
-/* For Odd-Even contrast */
-
-table tbody:first-of-type tr:nth-child(odd),
-table tbody:first-of-type tr:nth-child(odd) th {
-    background: #fff
-}
-
-table tbody:first-of-type tr:nth-child(even),
-table tbody:first-of-type tr:nth-child(even) th {
-    background: #dfdfdf
 }
 
 .column_attribute {
@@ -226,13 +171,17 @@ table tbody:first-of-type tr:nth-child(even) th {
 }
 
 @media print {
-    #back_button_print_view,
-    #print_button_print_view {
-        display: none
-    }
-}
+	body {
+		margin: 0!important;
+	}
 
-tton_print_view,
-#print_button_print_view {
-    display: none
+	#page_content {
+		position: relative!important;
+		margin: 0!important;
+		box-shadow: none!important;
+	}
+
+    #back_button_print_view, #print_button_print_view, #tableFilter, thead th .icon {
+        display: none!important
+    }
 }

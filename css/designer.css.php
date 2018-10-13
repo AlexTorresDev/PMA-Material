@@ -333,7 +333,7 @@ a.active.trigger:hover {
   border-top: 1px solid #999
 }
 
-.toggle_container .block img.ic_s_info {
+.toggle_container .block .ic_s_info {
   -webkit-filter: invert(70%);
   filter: invert(70%)
 }

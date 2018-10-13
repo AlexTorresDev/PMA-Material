@@ -120,8 +120,7 @@ div#left_tableList li:hover a:first-child:before {
 
 #pma_navigation_tree li .navItemControls .icon, #pma_navigation_tree li .dbItemControls .icon {
   width: 15px;
-  height: 15px;
-  background-color: #444
+  height: 15px
 }
 
 #pma_navigation_tree li.activePointer .navItemControls {
@@ -138,10 +137,6 @@ div#left_tableList li:hover a:first-child:before {
   position: relative;
   z-index: 100;
   top: 7px
-}
-
-#pma_navigation_tree a {
-  color: <?php echo $GLOBALS['cfg']['WhiteColor'] ?>
 }
 
 #pma_navigation_tree ul {
@@ -248,11 +243,14 @@ div#left_tableList li:hover a:first-child:before {
   margin-left: -7px;
   width: 18px;
   height: 18px;
-  background-color: #546E7A
 }
 
-#pma_navigation_tree li.selected div.block img {
-  background-color: <?php echo $GLOBALS['cfg']['AccentColor'] ?>
+#pma_navigation_tree li.selected .ic_b_plus {
+  background-image: url('./themes/<?php echo $slug ?>/img/svg/plus-circle-color.svg')
+}
+
+#pma_navigation_tree li.selected .ic_b_minus {
+  background-image: url('./themes/<?php echo $slug ?>/img/svg/minus-circle-color.svg')
 }
 
 #pma_navigation_tree div.throbber img {
@@ -323,6 +321,10 @@ li.fast_filter.db_fast_filter {
   display: inherit
 }
 
+#pma_favorite_list .icon {
+  opacity: 1
+}
+
 /* Resize handler */
 #pma_navigation_resizer {
   width: 3px;
@@ -347,7 +349,7 @@ li.fast_filter.db_fast_filter {
   left: <?php echo $GLOBALS['cfg']['NaviWidth'] ?>px;
   text-align: center;
   text-indent: -9999px;
-  background-image: url("./themes/<?php echo $slug ?>/img/b_back.png")!important;
+  background-image: url("./themes/<?php echo $slug ?>/img/svg/arrow-left.svg")!important;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -356,7 +358,7 @@ li.fast_filter.db_fast_filter {
   z-index: 801
 }
 
-#pma_navigation_collapser[style="left: 3px;"] {
+#pma_navigation_collapser[style="left: 3px;"], #pma_navigation_collapser[style="left: 0px;"] {
   transform: rotate(180deg);
   transition: all .3s ease-in-out
 }

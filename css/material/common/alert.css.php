@@ -30,7 +30,8 @@
 }
 
 .success .icon, .error .icon, .footnotes .icon {
-  background-color: <?php echo $GLOBALS['cfg']['WhiteColor'] ?>
+  -webkit-filter: invert(100%);
+  filter: invert(100%)
 }
 
 form + .notice {
@@ -99,20 +100,19 @@ fieldset.confirmation legend {
 /* End Forbidden */
 
 fieldset.caution {
-  background: <?php echo $GLOBALS['cfg']['WarningColor'] ?>;
+  border: 1px solid <?php echo $GLOBALS['cfg']['WarningColor'] ?>;
   border-radius: 2px;
   padding: 20px;
   margin-bottom: 20px
 }
 
 fieldset.caution legend {
-  top: 35px!important;
-  color: <?php echo $GLOBALS['cfg']['WhiteColor'] ?>!important
+  padding: 0 15px;
+  margin: 0
 }
 
 fieldset.caution a {
   text-transform: uppercase;
-  color: <?php echo $GLOBALS['cfg']['WhiteColor'] ?>;
   font-weight: normal
 }
 
@@ -130,5 +130,5 @@ fieldset.caution li:before {
 }
 
 fieldset.caution img {
-  background-color: <?php echo $GLOBALS['cfg']['WhiteColor'] ?>
+  margin: 0 7px 0 0
 }

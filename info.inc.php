@@ -9,4 +9,4 @@
 
 // Theme info
 $theme_name = 'PMA Material';
-$theme_full_version = '0.1';
+$theme_full_version = '0.2';

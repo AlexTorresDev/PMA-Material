@@ -19,7 +19,8 @@ if (!defined('PMA_MINIMUM_COMMON') && !defined('TESTSUITE') ) {
 }
 
 .resizable-menu .submenu ul .icon {
-  background-color: #000!important
+  -webkit-filter: invert(0%)!important;
+  filter: invert(0%)!important
 }
 
 ul.resizable-menu .shown {

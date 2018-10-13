@@ -44,7 +44,8 @@ thead th, thead th a:hover {
 }
 
 thead th .icon {
-  background-color: <?php echo $GLOBALS['cfg']['WhiteColor'] ?>
+  -webkit-filter: invert(100%);
+  filter: invert(100%)
 }
 
 table:not(#index_columns) thead th, #table_columns thead th, table:not(#index_columns) thead td, #table_columns thead td {
