@@ -34,4 +34,4 @@ Theme material design for phpmyadmin inspire per the [design by Agustin](http://
 
 ## LICENSE
 
-Licensed under GPL license. Please see the license file: ![LICENSE](LICENSE)
+Licensed under GPL license. Please see the license file: [LICENSE](LICENSE)
