@@ -1,7 +1,7 @@
-![logo phpmyadmin Material](https://github.com/alextorressk/PMA-Material/blob/master/img/logo_left.png "Logo phpmyadmin Material")
+![logo phpmyadmin Material](img/logo_left.png "Logo phpmyadmin Material")
 
 # Material v0.2 (Work in progress)
-Theme material design for phpmyadmin inspire per the [design by Agustin](http://www.materialup.com/posts/phpmyadmin-material-design) and based on [Materialized by Florian](https://github.com/foxdog05000/materialized)
+Theme material design for phpmyadmin inspire per the [design by Agustin](http://www.materialup.com/posts/phpmyadmin-material-design)
 
 ## Changelog
 
@@ -34,4 +34,4 @@ Theme material design for phpmyadmin inspire per the [design by Agustin](http://
 
 ## LICENSE
 
-Licensed under GPL license. Please see the license file: https://github.com/AlexTorresSk/PMA-Material/LICENSE
+Licensed under GPL license. Please see the license file: ![LICENSE](LICENSE)
