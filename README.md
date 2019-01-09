@@ -1,6 +1,6 @@
 ![logo phpmyadmin Material](img/logo_left.png "Logo phpmyadmin Material")
 
-# Material v0.2 (Work in progress)
+# Material v1.0.0
 Theme material design for phpmyadmin inspire per the [design by Agustin](http://www.materialup.com/posts/phpmyadmin-material-design)
 
 ## Changelog
@@ -20,17 +20,17 @@ Theme material design for phpmyadmin inspire per the [design by Agustin](http://
 
 ## Screenshot
 
-![Material Login](screen1.png)
+![Material Login](screenshots/screen1.png)
 
-![Material Home](screen2.png)
+![Material Home](screenshots/screen2.png)
 
-![Material Databases](screen3.png)
+![Material Databases](screenshots/screen3.png)
 
-![Material User Accounts](screen4.png)
+![Material User Accounts](screenshots/screen4.png)
 
-![Material Settings](screen5.png)
+![Material Settings](screenshots/screen5.png)
 
-![Material Engines](screen6.png)
+![Material Engines](screenshots/screen6.png)
 
 ## LICENSE
 
